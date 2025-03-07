@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>TIRUPATI</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-    <H1>NEW HTML FILE</H1>
+<form>
+Num1:
+<input id="a"><br>
+Num2:
+<input id="b"><br>
+Result:
+<input id="up"><br>
+<button type="button" onclick="add()">add</button>
+<button type="button" onclick="sub()">sub</button>
+<button type="button" onclick="mult()">mult</button>
+<button type="button" onclick="div()">div</button><br>
+</form>
+<script type="text/javascript">
+function add()
+{
+var x,y,z;
+x=document.getElementById("a").value;
+y=document.getElementById("b").value;
+z=parseInt(x)+parseInt(y);
+up.value=z;
+}
+function sub()
+{
+var x,y,z;
+x=document.getElementById("a").value;
+y=document.getElementById("b").value;
+z=x-y;
+up.value=z;
+}
+function mult()
+{
+var x,y,z;
+x=document.getElementById("a").value;
+y=document.getElementById("b").value;
+z=x*y;
+up.value=z;
+}
+function div()
+{
+var x,y,z;
+x=document.getElementById("a").value;
+y=document.getElementById("b").value;
+z=x/y;
+up.value=z;
+}
+</script>
 </body>
 </html>
